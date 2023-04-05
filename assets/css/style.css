@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+
+.container{
+    display: flex;
+    padding: 20px;
+}
+
+.logo-google{
+    flex: 1;
+}
+
+.area-pesquisa{
+    flex: 2;
+}
+
+.area-config{
+    display: flex;
+    flex: 2;
+    justify-content: flex-end;
+}
+
+
+.pesquisa{
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    width:100%;
+    border: 1px solid #dfe1e5;
+    border-radius: 10px;
+}
+
+.pesquisa input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.fazer-login button{
+    margin-left: 20px;
+    padding: 5px;
+    background-color: #4585f3;
+    border: none;
+    color: #fff;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conatiner{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.conatiner ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.conatiner ul li{
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.conatiner ul li a{
+    text-decoration: none;
+    color: #5c5c5c;
+}
+
+.conatiner ul li a:hover{
+    color: #4585f3;
+}
+
+.active{
+    border-bottom: 3px solid #4585f3;
+    padding-bottom: 10px;
+}
+
+.quantidade-pesquisa{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #5c5c5c;
+}
+
+.resultado-pesquisa{
+    margin-bottom: 20px;
+}
+
+.pesquisa-rela table tr td{
+    width: 200px;
+}
+
+.pesquisa-rela a{
+    text-decoration: none;
+}
+
+#modi{
+    padding-bottom: 20px;
+}
+
+@media (max-width:900px){
+    .conatiner{
+        width: 100%;
+    }
+}
+
+@media (max-width:580px){
+    .conatiner ul li{
+        font-size: 13px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width:750px){
+    .area-config{
+        display: none;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .area-pesquisa{
+        flex: 1;
+    }
+
+    .logo-google{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:470px){
+    .conatiner ul li{
+        font-size: 7px;
+    }
+
+}
+
+@media (max-width:304px){
+    .conatiner ul li{
+        font-size: 6px;
+    }
+
+}
